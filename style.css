@@ -1,0 +1,19 @@
+.hero-image .hero-btn{
+    text-decoration: none;
+    color: #fff;
+    background: #000;
+    padding: 10px 30px;
+    border-radius: 5px;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.hero-image .hero-btn:hover{
+    background: #fff;
+    color: #000;
+}
+
+.main-box {
+    display: flex; 
+    justify-content: space-between; 
+    align-items-center;

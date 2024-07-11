@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-50">
+
+  <!-- Header Section -->
+  <header class="bg-gray-800 text-white p-4">
+    <div class="container mx-auto flex justify-between items-center">
+      <h1 class="text-xl font-bold">Seif Karume</h1>
+      <nav>
+        <ul class="flex space-x-4">
+          <li><a href="#home" class="hover:text-gray-400">Home</a></li>
+          <li><a href="#projects" class="hover:text-gray-400">Projects</a></li>
+          <li><a href="#contact" class="hover:text-gray-400">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="bg-cover bg-center h-screen flex items-center justify-center" style="background-image: url('Assets/image_processing20220123-23040-vbtt75.gif');">
+    <div class="text-center text-white">
+      <h2 class="text-4xl font-bold mb-4">Hello, I'm Your Front-End Developer</h2>
+      <p class="text-xl">Brian Seif Karume</p>
+      <a href="#" class="hero-btn">Hire Me</a>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="py-12 bg-gray-100">
+    <div class="container mx-auto">
+      <h2 class="text-3xl font-bold text-center mb-8">Skills</h2>
+      <div class="flex flex-wrap justify-center">
+        <div class="m-4 p-4 bg-white shadow-lg rounded-lg w-40 text-center">
+          <h3 class="font-bold">HTML</h3>
+        </div>
+        <div class="m-4 p-4 bg-white shadow-lg rounded-lg w-40 text-center">
+          <h3 class="font-bold">CSS</h3>
+        </div>
+        <div class="m-4 p-4 bg-white shadow-lg rounded-lg w-40 text-center">
+          <h3 class="font-bold">JavaScript</h3>
+        </div>
+        <!-- Add more skill cards as needed -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+<section id="projects" class="py-12">
+    <div class="container mx-auto">
+      <h2 class="text-3xl font-bold text-center mb-8">Projects</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+          <img src="Assets/quiz-app-screens-dark.png" alt="Quiz App" class="w-full h-48 object-cover">
+          <div class="p-4">
+            <h3 class="font-bold text-xl">Quiz App</h3>
+            <p class="text-gray-600">It was a dynamic and engaging frontend application designed to test users' knowledge on various topics through interactive quizzes. This application provided a fun and educational experience, making it perfect for users of all ages who enjoy challenging themselves with quizzes on a wide range of subjects.</p>
+          </div>
+        </div>
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+          <img src="Assets/jusplay_movie_streaming_app_flutter_4_18621919f4.jpg" alt="Movie App" class="w-full h-48 object-cover">
+          <div class="p-4">
+            <h3 class="font-bold text-xl">Movie App</h3>
+            <p class="text-gray-600">It was a sleek and user-friendly frontend application designed to provide movie enthusiasts with an intuitive platform to explore, discover, and keep track of their favorite films. Built using modern web technologies, it offered a seamless browsing experience with features like movie search, detailed movie information, and personalized watchlists.</p>
+          </div>
+        </div>
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+            <img src="Assets/quiz-app-screens-dark.png" alt="Quiz App" class="w-full h-48 object-cover">
+            <div class="p-4">
+              <h3 class="font-bold text-xl">Ecommerce App</h3>
+              <p class="text-gray-600">It was a modern and intuitive frontend ecommerce application designed to provide users with a seamless shopping experience. With a clean and responsive design, it allowed users to browse, search and purchase products with ease. The application is optimized for performance and user engagement, making online shopping enjoyable and efficient.</p>
+            </div>
+          </div>
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- Contact Form -->
+  <section id="contact" class="py-12 bg-gray-100">
+    <div class="container mx-auto">
+      <h2 class="text-3xl font-bold text-center mb-8">Contact</h2>
+      <form class="max-w-lg mx-auto bg-white p-8 shadow-lg rounded-lg">
+        <div class="mb-4">
+          <label for="name" class="block text-gray-700 font-bold mb-2">Name</label>
+          <input type="text" id="name" class="w-full p-2 border border-gray-300 rounded-lg">
+        </div>
+        <div class="mb-4">
+          <label for="email" class="block text-gray-700 font-bold mb-2">Email</label>
+          <input type="email" id="email" class="w-full p-2 border border-gray-300 rounded-lg">
+        </div>
+        <div class="mb-4">
+          <label for="message" class="block text-gray-700 font-bold mb-2">Message</label>
+          <textarea id="message" class="w-full p-2 border border-gray-300 rounded-lg"></textarea>
+        </div>
+        <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600">Send</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white p-4">
+    <div class="container mx-auto flex justify-between items-center">
+      <p>&copy; 2024 SeifKar. All rights reserved.</p>
+      <div class="flex space-x-4">
+        <a href="https://twitter.com" class="hover:text-gray-400"><i class="fab fa-twitter"></i></a>
+        <a href="https://github.com" class="hover:text-gray-400"><i class="fab fa-github"></i></a>
+        <a href="https://linkedin.com" class="hover:text-gray-400"><i class="fab fa-linkedin"></i></a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
